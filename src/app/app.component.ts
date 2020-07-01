@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-tour-of-heroes';
+  title: string = 'AL - Header Navigation';
+  displayFooter: boolean = true;
+
+  toggleFooter(event: boolean): void {
+    this.displayFooter = event;
+  }
 }

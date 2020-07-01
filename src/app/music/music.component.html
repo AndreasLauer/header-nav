@@ -1,0 +1,10 @@
+<h2>My Music Videos</h2>
+
+<p>Darstellung in Ag-Grid Tabelle - Link Youtube Site - Link Details Site - Playlist Funktionalität (mit Shuffle)</p>
+
+<ul class="music-videos">
+    <li *ngFor="let musicVideo of musicVideos">
+      <span>Id: {{musicVideo.id}} - Interpret: {{musicVideo.interpret}} - Titel: {{musicVideo.title}}</span>
+      <span *ngFor="let tag of musicVideo.tagList" class="music-video-tag">{{tag}}</span>
+    </li>
+  </ul>
