@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+import { AgGridModule } from 'ag-grid-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
@@ -39,6 +40,8 @@ import { MaterialComponent } from './material/material.component';
     HttpClientModule,
     FormsModule,
     FlexLayoutModule,
+    // The withComponents call is necessary for the grid to be able to use Angular components as cells / headers
+    AgGridModule.withComponents([]),
     AppRoutingModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

@@ -21,8 +21,8 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 20, name: 'Tornado' }
     ];
     const musicVideos: Array<MusicVideo> = [
-      { id: 1, interpret: 'ah-bert', title: 'humba-humba-humba-tätäräääääää', tagList: ['schönes', 'a-moll']},
-      { id: 2, interpret: 'be-bert', title: 'dideldum-dideldey', tagList: ['lustiges', 'gis-dur']},
+      { id: 1, interpret: 'Os Tincoãs', title: ' Deixa A Gira Girar (j g b edit)', tagList: ['latin'], youtubeUrl: 'https://www.youtube.com/watch?v=3xt8Mp8oWzc'},
+      { id: 2, interpret: 'Nu', title: 'MAN O TO (Original Mix)', tagList: ['lustiges', 'lounge'], youtubeUrl: 'https://www.youtube.com/watch?v=sQh7fr53Xy0'},
     ];
     return {heroes, musicVideos};
   }

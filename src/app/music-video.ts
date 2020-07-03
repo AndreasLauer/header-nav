@@ -3,4 +3,5 @@ export interface MusicVideo {
     interpret: string;
     title: string;
     tagList: Array<string>;
+    youtubeUrl: string;
 }
