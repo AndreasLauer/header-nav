@@ -1,0 +1,54 @@
+.al-sidenav {
+    position: fixed;
+    top: 97px;
+    width: 171px;
+    height: 100%;
+    /* background-color: yellowgreen; */
+    /* background: linear-gradient(to right, red, purple); */
+    /* background-image: linear-gradient(to bottom right, #fcecd2, #f79a05, #825103); */
+    /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14,173,173)), color-stop(0.67, rgb(0,255,255)));
+    background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% ); */
+}
+
+.al-sidenav nav {
+    margin-top: 35px;
+}
+
+.al-sidenav nav ul {
+    
+}
+
+.al-sidenav nav ul li {
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+.al-sidenav nav ul li a {
+    color: #230259;
+    text-decoration: none;
+}
+
+/* .al-sidenav nav ul li a:visited {
+    color: #bfcfbc;
+    text-decoration: none;
+} */
+
+.al-sidenav nav ul li a:hover {
+    color: #2d81e0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.al-sidenav nav ul li a:active {
+    color: #c0063e;
+    text-decoration: none;
+}
+
+.al-sidenav-border-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 90%;
+    background-image:  linear-gradient(to bottom, #fcecd2, #230259, #fcecd2);
+}

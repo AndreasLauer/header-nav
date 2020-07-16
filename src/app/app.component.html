@@ -1,4 +1,7 @@
-<app-header (toggleShowFooter)="toggleFooter($event)"></app-header>
+<app-header (toggleShowFooter)="toggleFooter($event)" (dashboardLinks)="setDashboardLinks($event)"></app-header>
+
+<app-sidenav *ngIf="sidenavLinks.length" [sidenavLinks]="sidenavLinks"></app-sidenav>
+
 <div class="al-content">
     <router-outlet></router-outlet>
 </div>

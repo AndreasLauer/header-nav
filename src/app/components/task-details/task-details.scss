@@ -1,0 +1,36 @@
+.task-list-details{
+    &__wrapper {
+        width: 100%;
+        border: 1px solid #825103;
+        background-color: #fcecd2;
+        margin-bottom: 35px;
+    }
+    &__header {
+        background-image: linear-gradient(to bottom right, #fcecd2, #f79a05, #825103);
+        padding: 5px 0 0 5px;
+        height: 27px;
+    }
+    &__header-task-id {
+        margin-top: 0;
+        width: 98%;
+    }
+    &__content {
+        padding: 5px 0 5px 15px;
+    }
+    &__icon-bar {
+        width: 98%;
+        background-color: yellowgreen;
+        margin: 3px;
+        padding: 3px;
+    }
+    &__name {
+        width: 98%;
+        margin: 3px;
+        padding: 3px;
+    }
+    &__description {
+        width: 98%;
+        margin: 3px;
+        padding: 3px;
+    }
+}

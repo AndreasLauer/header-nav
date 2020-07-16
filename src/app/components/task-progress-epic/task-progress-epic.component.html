@@ -1,0 +1,8 @@
+<p>task-progress-epic works!</p>
+<h3>{{epic.name}}</h3>
+<div fxLayout="row" fxLayoutGap="15px">
+    <app-task-progress-column [title]="todoTitle" [tasks]="epic.toDos"></app-task-progress-column>
+    <app-task-progress-column [title]="inProgressTitle" [tasks]="epic.inProgress"></app-task-progress-column>
+    <app-task-progress-column [title]="toVerifyTitle" [tasks]="epic.toVerify"></app-task-progress-column>
+    <app-task-progress-column [title]="doneTitle" [tasks]="epic.done"></app-task-progress-column>
+</div>

@@ -1,0 +1,17 @@
+<div class="task-list-container__wrapper">
+    <div class="task-list-container__header" fxLayout="row">
+        <h3 class="task-list-container__header-title">{{title}}</h3>
+        <img *ngIf="isExpanded" src="../assets/collapse.png" class="task-list-container__header-collapse" (click)="collapse()">
+    </div>
+    <!-- <ul>
+        <li *ngFor="let task of tasks">{{task.id}} {{task.name}}</li>
+    </ul> -->
+    <div class="task-list-container__content">
+        <div fxLayout="column" fxLayoutGap="5px">
+            <app-task-list-item
+            *ngFor="let task of tasks"
+            [task]="task"
+            (taskSelected)="taskItemSelected($event)"></app-task-list-item>
+        </div>
+    </div>
+</div>

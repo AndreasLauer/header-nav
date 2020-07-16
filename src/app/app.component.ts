@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'AL - Header Navigation';
-  displayFooter: boolean = true;
+  displayFooter: boolean = false;
+
+  sidenavLinks = [];
 
   toggleFooter(event: boolean): void {
     this.displayFooter = event;
+  }
+
+  setDashboardLinks(event) {
+    this.sidenavLinks = event;
   }
 }

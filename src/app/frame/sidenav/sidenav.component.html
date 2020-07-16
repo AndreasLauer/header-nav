@@ -1,0 +1,10 @@
+<div class="al-sidenav">
+    <nav>
+        <ul>
+            <li *ngFor="let sidenavLink of sidenavLinks">
+                <a routerLink="/{{sidenavLink.path}}">{{sidenavLink.name}}</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="al-sidenav-border-right"></div>
+</div>

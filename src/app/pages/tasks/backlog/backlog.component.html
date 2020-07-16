@@ -1,0 +1,20 @@
+<p>backlog works!</p>
+
+<div fxLayout="row" fxLayoutGap="5px" fxFill>
+    <div class="ws-tasks-backlog-main-content">
+        <app-task-list-container
+        [title]="actualTasksTitle"
+        [tasks]="actualTasks"
+        (taskSelected)="taskSelected($event)"></app-task-list-container>
+        
+        <app-task-list-container
+        [title]="backlogTasksTitle"
+        [tasks]="backlogTasks"
+        (taskSelected)="taskSelected($event)"></app-task-list-container>
+    </div>
+    
+    <div  class="ws-tasks-backlog-side-content" *ngIf="selectedTask">
+        <app-task-details [task]="selectedTask"></app-task-details>
+    </div>
+</div>
+

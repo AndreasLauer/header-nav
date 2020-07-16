@@ -1,0 +1,12 @@
+<p>workflow works!</p>
+<div fxLayout="row" fxLayoutGap="5px" fxFill>
+    <div class="ws-tasks-backlog-main-content">
+        <!-- <div fxLayout="row" fxLayoutGap="35px"> -->
+            <app-task-progress-epic *ngFor="let epic of allEpics" [epic]="epic"></app-task-progress-epic>
+        <!-- </div> -->
+    </div>
+    
+    <div  class="ws-tasks-backlog-side-content" *ngIf="selectedTask">
+        <app-task-details [task]="selectedTask"></app-task-details>
+    </div>
+</div>

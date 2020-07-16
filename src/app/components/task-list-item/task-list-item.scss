@@ -1,0 +1,31 @@
+.task-list-item {
+    &__wrapper {
+        width: 95%;
+        border: 2px solid #f79a05;
+    }
+    &__property {
+        padding: 5px;
+    }
+    &__id {
+        width: 10%;
+        border-right: 2px solid #f79a05;
+    }
+    &__epic {
+        width: 10%;
+        border-right: 2px solid #f79a05;
+    }
+    &__name {
+        width: 10%;
+        border-right: 2px solid #f79a05;
+    }
+    &__description {
+        width: 500px;;
+        border-right: 2px solid #f79a05;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space:nowrap
+    }
+    &__status {
+        width: 10%;
+    }
+}

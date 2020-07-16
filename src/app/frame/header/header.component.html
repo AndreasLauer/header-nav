@@ -1,0 +1,14 @@
+<div class="al-header">
+    <img src="../assets/my-gargantua.3.png" alt="Gargantua">
+    <h1>{{title}}</h1>
+    <nav>
+        <a routerLink="/dashboard" (click)="this.dashboardLinks.emit([])">Dashboard</a>
+        <a routerLink="/tasks/overview" (click)="tasksLinkClicked()">Tasks</a>
+        <a routerLink="/angular/overview" (click)="angularLinkClicked()">Angular</a>
+        <a routerLink="/media/overview" (click)="mediaLinkClicked()">Media</a>
+        <a routerLink="/tools/overview" (click)="this.dashboardLinks.emit([])">Tools</a>
+        <a routerLink="/heroes" (click)="this.dashboardLinks.emit([])">Heroes</a>
+    </nav>
+    <button id="al-header-toggle-footer"
+            (click)="toggleFooter()">Toggle Footer</button>
+</div>
